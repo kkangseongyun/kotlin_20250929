@@ -56,4 +56,39 @@ fun main() {
     //val, 초기화 후에 값 변경은 불가능하지만.. 그렇다고 상수는 아니다..
     println(valData)
     println(valData)
+
+
+    //casting..........모든것이 객체이다..
+    val a1 = 10
+    val a2: Double = a1.toDouble()//함수를 이용해 데이터 변형시켜야.. 캐스팅 안된다..
+    val a3: Int = a2.toInt()
+
+    val a4: String = a1.toString()
+    val a5: Int = a4.toInt()
+
+    //String...............................
+    val str1 = "Hello \n World"
+    val str2 = """
+        Hello
+        World
+    """.trimIndent()
+
+    println(str1)
+    println(str2)
+
+    val name = "kim"
+    fun sum():Int {
+        return 10 + 20
+    }
+    println("data : ${name}, $name, ${sum()}, ${10 + 20}")//data : kim, kim, 30, 30
 }
+
+
+
+
+
+
+
+
+
+
